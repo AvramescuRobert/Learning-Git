@@ -10,7 +10,7 @@ Custom filters for [Logstash](https://www.elastic.co/logstash/) to parse JSON, X
 3. [Filters](#filters)
     1. [JSON](#json)
     2. [XML](#xml)
-    3. [KAFKA](#kafka)
+    3. [KAFKA & LISTENERS](#kafka)
 
 
 ## Requirements <a name="requirements"></a>
@@ -126,7 +126,7 @@ filter {
 }
 ```
 
-#### KAFKA <a name="kafka"></a>
+#### KAFKA & LISTENERS<a name="kafka"></a>
 ```Properties
 filter {
     grok{
