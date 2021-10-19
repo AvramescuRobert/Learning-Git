@@ -4,7 +4,7 @@
 ## Description
 Custom filters for [Logstash](https://www.elastic.co/logstash/) to parse JSON, XML and Kafka logs.
 
-# Table of contents
+## Table of contents
 1. [Requierments](#requirements)
 2. [Usage](#usage)
 3. [Filters](#filters)
@@ -111,7 +111,9 @@ filter {
         }
     }
     grok {
-		match => { "message" => "%{TIMESTAMP_ISO8601:logdate}"}
+	match => { 
+		"message" => "%{TIMESTAMP_ISO8601:logdate}"
+	}
     }
     xml {
       source => ["xml"]
