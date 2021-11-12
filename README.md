@@ -50,7 +50,7 @@ logstash:
 In the folder where you have the docker-compose.yml file, you will create a new folder *logstash_pipeline* (this is just an example) and a configuration file after the structure:
 ```
 root
-| docker-compose.yml
+|── docker-compose.yml
 |
 └── logstash_pipeline
     | ports.conf
